@@ -503,13 +503,13 @@ footer div {
    VEXORA PROJECT
 ========================= */
 
-.project-image-single {
+.project-image-single img {
+  display: block;
   width: 100%;
-  margin: 22px 0 30px;
-  overflow: hidden;
-  border-radius: 14px;
-  border: 1px solid #292929;
-  background: #0a0a0a;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
 }
 
 .project-image-single img {
@@ -545,9 +545,7 @@ footer div {
 /* VEXORA mobile */
 
 @media (max-width: 800px) {
-
   .project-image-single img {
-    height: 220px;
+    height: 180px;
   }
-
 }
