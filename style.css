@@ -449,3 +449,105 @@ footer div {
 .project-links .project-link {
     margin-top: 0;
 }
+.contact-text {
+  max-width: 620px;
+  margin-top: 28px;
+  color: #949494;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 36px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 35px;
+  color: #777;
+  font-size: 13px;
+}
+
+.contact-info a {
+  color: #bbb;
+  transition: color 0.25s ease;
+}
+
+.contact-info a:hover {
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+
+  .contact-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-actions .btn {
+    width: 100%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+/* =========================
+   VEXORA PROJECT
+========================= */
+
+.project-image-single {
+  width: 100%;
+  margin: 22px 0 30px;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid #292929;
+  background: #0a0a0a;
+}
+
+.project-image-single img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image-single img {
+  transform: scale(1.02);
+}
+
+
+/* Pending marketplace status */
+
+.project-link-disabled {
+  color: #777;
+  border-bottom-color: #333;
+  cursor: default;
+  pointer-events: none;
+}
+
+.project-link-disabled:hover {
+  color: #777;
+  border-bottom-color: #333;
+  transform: none;
+}
+
+
+/* VEXORA mobile */
+
+@media (max-width: 800px) {
+
+  .project-image-single img {
+    height: 220px;
+  }
+
+}
